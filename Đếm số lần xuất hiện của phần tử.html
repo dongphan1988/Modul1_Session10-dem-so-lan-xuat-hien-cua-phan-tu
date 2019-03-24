@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let arr = [];
+for (let i =0; i<100;i++){
+    arr[i] = Math.floor(Math.random()*101);
+}
+function count(arr,data) {
+    let valueCount = 0;
+    for(let i =0;i<arr.length;i++){
+        if (data === arr[i]){
+            valueCount++
+        }
+    }return valueCount
+}
+
+    let a = count(arr,60);
+document.write(arr+"<br>");
+    document.write(a)
+</script>
+</body>
+</html>
